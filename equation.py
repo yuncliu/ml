@@ -4,7 +4,7 @@ import numpy as np
 """Basic usage of tensorflow"""
 
 if __name__ == '__main__':
-    """ learn an equation   y = ax 
+    """ learn an equation   y = ax
     y and x is know,  use alot of y and x to learn out a
     """
     a = np.array([[2, 1], [3, 1]])
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     for i in range(10000):
         xx = np.random.rand(2,1)
         # yy = a * xx use this data to train
-        yy = np.dot(a, xx) 
+        yy = np.dot(a, xx)
         sess.run(train_step, feed_dict={x:xx, y_:yy })
 
     #W will be very close to matrix a
